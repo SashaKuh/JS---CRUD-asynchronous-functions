@@ -5,10 +5,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Page title</title>
     <link rel="stylesheet" href="./sass/index.scss" />
-    <script type="module" src="./index.js"></script>
   </head>
   <body>
-    <!-- ❗️❗️❗️ Add partials like so for every page -->
-    <include src="./partials/example.html"></include>
+    <div class="search-container">
+      <div class="search-box">
+        <form class="js-search-form">
+          <input
+            class="search-input"
+            type="text"
+            name="searchQuery"
+            autocomplete="off"
+            placeholder="Search images..."
+          />
+          <button class="btn-search" type="submit">Put</button>
+        </form>
+      </div>
+    </div>
+    <div class="gallery"></div>
+    <div class="loader-wrapper">
+      <span class="loader"></span>
+    </div>
+    <div class="js-load-more"></div>
+    <div id="progress">
+      <span id="progress-value">
+        <svg width="24" height="24">
+          <use href="./images/icons.svg#arrow-up"></use>
+        </svg>
+      </span>
+    </div>
+    <!--Script-->
+    <script type="module" src="./js/main.js"></script>
   </body>
 </html>
