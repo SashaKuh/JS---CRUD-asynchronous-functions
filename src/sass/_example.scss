@@ -138,6 +138,7 @@ img {
   }
 }
 
+// To-top
 #progress {
   position: fixed;
   bottom: 20px;
@@ -151,13 +152,9 @@ img {
   cursor: pointer;
   
 }
-
-/* Show the progress circle when the page is scrolled */
 #progress.active {
   display: grid;
 }
-
-/* Hide the progress circle when the page is at the top */
 #progress.inactive {
   opacity: 0;
 }
